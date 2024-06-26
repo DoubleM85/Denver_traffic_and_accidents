@@ -4,7 +4,7 @@
 [Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZDFmOTQwZjctMTUyYS00YjNlLWE3ZmEtYWYwMzZmMTNlYzY2IiwidCI6IjEwMWRhNTg3LTE4NDMtNGY1Mi04YjhhLTE3YjA2OWM2NmQzMyIsImMiOjJ9)
 ___
 ## Motivation
-After witnessing nearly a dozen accidents at one intersection near my house and heaing myself and my neighbors say "This alwasy happens here!"; I wanted to use my new analytics skill to investigate whether or not certain areas were more prone to accidents and if there were any common causes and what could be done to reduce accident numbers.
+After witnessing nearly a dozen accidents at one intersection near my house and hearing myself and my neighbors say "This always happens here!"; I wanted to use my new analytics skill to investigate whether or not certain areas were more prone to accidents, if there were any common causes and what could be done to reduce accident numbers.
 _____
 ### Data Used
 - [Traffic Accidents - denvergov.org](https://www.denvergov.org/opendata/dataset/city-and-county-of-denver-traffic-accidents)
@@ -17,18 +17,18 @@ I wanted to use data around police traffic and pedestrian stops but [that data](
 ______
 ### Methodology
 ##### Cleaning and Manipulation
-- Created a new column (offense_clean) to remove redundant text in teh offense_id column.
-- replaced NAN number values with zeros
-- Created several columsn to categorize data by month, year, day and season
+- Created a new column (offense_clean) to remove redundant text in the offense_id column.
+- Replaced NAN number values with zeros where appropriate
+- Created several columns to categorize data by month, year, day and season
 - Merge with a zipcode table using geometry
-- used a function to determine minimum distance from traffic lights and cameras for each accident
+- Used a function to determine minimum distance from traffic lights and cameras for each accident
 ___
 ##### Folder Structure and Descriptions
 
 - /notebooks/ - 
     - ..Accidents EDA.ipynb - initial EDA and date manipulations
     - ..Main EDA.ipynb - majority of EDA done here
-    - ..Liqour.ipynb - cleanign and manipulation of Liquor License dataset
+    - ..Liqour.ipynb - cleaning and manipulation of Liquor License dataset
     - ..Binning Distances.ipynb - creating distance bins for visualizations
 - /images/ - images used in Dashboard
 - /dashboards/ - Power BI Dashboard
